@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="favoriteCell" rowHeight="169" id="QiP-7K-NxV" customClass="FavoriteTableViewCell" customModule="MovieAppUIKit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="323" height="471"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QiP-7K-NxV" id="kkT-kv-dai">
+                <rect key="frame" x="0.0" y="0.0" width="323" height="471"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lwt-Qd-gzG" userLabel="mainStackView">
+                        <rect key="frame" x="16" y="10" width="291" height="451"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="EP3-4k-YWf" userLabel="titleStackView">
+                                <rect key="frame" x="0.0" y="0.0" width="291" height="24"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XqS-Le-wBJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="262" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="m6h-aE-Wdg">
+                                        <rect key="frame" x="267" y="1.9999999999999982" width="24" height="21"/>
+                                        <color key="tintColor" systemColor="systemRedColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="BAc-s5-AmF"/>
+                                            <constraint firstAttribute="height" constant="24" id="OGi-jy-ek3"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="godfather" translatesAutoresizingMaskIntoConstraints="NO" id="6KE-8T-fXS">
+                                <rect key="frame" x="0.0" y="34" width="291" height="291"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="6KE-8T-fXS" secondAttribute="height" multiplier="1:1" id="txz-eR-ocI"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Rating:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1FR-d2-XQV">
+                                <rect key="frame" x="0.0" y="335" width="291" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="uGn-1H-C6m"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8f0-wk-yeg">
+                                <rect key="frame" x="0.0" y="362" width="291" height="89"/>
+                                <string key="text">a quick brow fox jumps over the lazy dog  a quick brow fox jumps over the lazy dog a quick brow fox jumps over the lazy dog a quick brow fox jumps over the lazy dog a quick brow fox jumps over the lazy dog</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="8f0-wk-yeg" firstAttribute="leading" secondItem="1FR-d2-XQV" secondAttribute="leading" id="T2B-Y6-33h"/>
+                            <constraint firstItem="1FR-d2-XQV" firstAttribute="leading" secondItem="6KE-8T-fXS" secondAttribute="leading" id="qdh-Cn-4uX"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="lwt-Qd-gzG" firstAttribute="leading" secondItem="kkT-kv-dai" secondAttribute="leading" constant="16" id="Tre-Nd-ETL"/>
+                    <constraint firstAttribute="trailing" secondItem="lwt-Qd-gzG" secondAttribute="trailing" constant="16" id="Vjk-K8-3HM"/>
+                    <constraint firstAttribute="bottom" secondItem="lwt-Qd-gzG" secondAttribute="bottom" constant="10" id="fcJ-8Q-Wts"/>
+                    <constraint firstItem="lwt-Qd-gzG" firstAttribute="top" secondItem="kkT-kv-dai" secondAttribute="top" constant="10" id="pkV-N3-Iob"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="descriptionLabel" destination="8f0-wk-yeg" id="un1-bE-oOF"/>
+                <outlet property="isFavorite" destination="m6h-aE-Wdg" id="AnA-GB-T9B"/>
+                <outlet property="movieImage" destination="6KE-8T-fXS" id="H53-pG-E7z"/>
+                <outlet property="ratingLabel" destination="1FR-d2-XQV" id="FTW-eV-aRq"/>
+                <outlet property="title" destination="XqS-Le-wBJ" id="jYi-CW-rrY"/>
+            </connections>
+            <point key="canvasLocation" x="45.038167938931295" y="15.140845070422536"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="godfather" width="3840" height="2160"/>
+        <image name="heart" catalog="system" width="128" height="107"/>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
