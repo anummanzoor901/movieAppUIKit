@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="searchCell" rowHeight="571" id="KGk-i7-Jjw" customClass="SearchTableViewCell" customModule="MovieAppUIKit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="379" height="571"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="379" height="571"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YNT-iY-0YD">
+                        <rect key="frame" x="15" y="10" width="349" height="551"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="es3-pf-YUA">
+                                <rect key="frame" x="0.0" y="0.0" width="349" height="20.333333333333332"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n3c-on-9iL">
+                                        <rect key="frame" x="0.0" y="0.0" width="86.333333333333329" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="gBg-EY-hS2">
+                                        <rect key="frame" x="328.33333333333331" y="1.9999999999999982" width="20.666666666666686" height="17.333333333333336"/>
+                                        <color key="tintColor" systemColor="systemPinkColor"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="godfather" translatesAutoresizingMaskIntoConstraints="NO" id="UJv-aP-E8L">
+                                <rect key="frame" x="0.0" y="30.333333333333343" width="349" height="349"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="UJv-aP-E8L" secondAttribute="height" multiplier="1:1" id="TLv-3X-EsU"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="COv-2E-DDg">
+                                <rect key="frame" x="0.0" y="389.33333333333331" width="349" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tPU-rG-hHT">
+                                        <rect key="frame" x="0.0" y="14.999999999999998" width="48.666666666666664" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemOrangeColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ts-fF-XAz">
+                                        <rect key="frame" x="193.66666666666663" y="8" width="155.33333333333337" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Don't show again">
+                                            <color key="baseForegroundColor" systemColor="systemRedColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="donotShowAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="B0P-P7-XAc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NFG-fa-F1p">
+                                <rect key="frame" x="0.0" y="449.33333333333331" width="349" height="101.66666666666669"/>
+                                <string key="text">a quick brow fox jumps over the lazy dog  a quick brow fox jumps over the lazy dog a quick brow fox jumps over the lazy dog a quick brow fox jumps over the lazy dog a quick brow fox jumps over the lazy dog</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="YNT-iY-0YD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="8Mj-pS-8sj"/>
+                    <constraint firstAttribute="trailing" secondItem="YNT-iY-0YD" secondAttribute="trailing" constant="15" id="Ebh-lX-eJW"/>
+                    <constraint firstAttribute="bottom" secondItem="YNT-iY-0YD" secondAttribute="bottom" priority="999" constant="10" id="p35-hJ-oTd"/>
+                    <constraint firstItem="YNT-iY-0YD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" priority="999" constant="10" id="vDa-0W-WW2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="descriptionLable" destination="NFG-fa-F1p" id="9a4-xc-Q42"/>
+                <outlet property="donotShowAgainButton" destination="1ts-fF-XAz" id="Aie-jt-QIc"/>
+                <outlet property="favouriteImage" destination="gBg-EY-hS2" id="5sI-sY-gYD"/>
+                <outlet property="movieImage" destination="UJv-aP-E8L" id="Lqo-4e-LZb"/>
+                <outlet property="ratingLabel" destination="tPU-rG-hHT" id="bsh-Dj-DO6"/>
+                <outlet property="title" destination="n3c-on-9iL" id="9i5-gf-WxX"/>
+            </connections>
+            <point key="canvasLocation" x="11.450381679389313" y="59.507042253521128"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="godfather" width="3840" height="2160"/>
+        <image name="heart" catalog="system" width="128" height="107"/>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
